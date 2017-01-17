@@ -1,0 +1,16 @@
+{
+  "profileBasic" : {
+    "idNo" : "cbbbabbb870-e99a-11e4-bb48-cbcddd66d218",
+    "id" : "test407@nate.com",
+    "mobileId" : "",
+    "maskingId" : "test****@nate.com",
+    "maskingMobileId" : "",
+    "name" : "",
+    "sexCode" : "",
+    "birthdayMMDD" : "0310",
+    "ageGroup" : "30"
+  },
+  "header" : {
+    "resultCode": 0,"successful": true,"resultMessage": "SUCCESS"
+  }
+}

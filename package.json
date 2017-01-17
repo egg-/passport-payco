@@ -1,0 +1,40 @@
+{
+  "name": "passport-payco",
+  "version": "0.1.0",
+  "author": {
+    "name": "egg",
+    "email": "i@egg.pe.kr"
+  },
+  "description": "Passport stratege for Payco OAuth 2.0",
+  "main": "./lib",
+  "scripts": {
+    "test": "standard && grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egg-/passport-payco.git"
+  },
+  "keywords": [
+    "passport",
+    "payco",
+    "auth",
+    "authn",
+    "authentication"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egg-/passport-payco/issues"
+  },
+  "homepage": "https://github.com/egg-/passport-payco#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "matchdep": "^1.0.1",
+    "mocha": "^3.2.0",
+    "standard": "^8.6.0"
+  },
+  "dependencies": {
+    "passport-oauth2": "^1.4.0"
+  }
+}
