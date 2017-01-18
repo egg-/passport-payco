@@ -19,7 +19,7 @@ describe('PaycoStrategy', function () {
 
   describe('strategy when loading user profile', function () {
     // mock
-    strategy._oauth2.get = function (url, accessToken, callback) {
+    strategy._oauth2._request = function (method, url, headers, postBody, accessToken, callback) {
       var body = JSON.stringify(require('./fixtures/profile.json'))
       callback(null, body, undefined)
     }
@@ -35,7 +35,7 @@ describe('PaycoStrategy', function () {
         it('should load profile', function (done) {
           assert.equal(profile.provider, 'payco')
           assert.equal(profile.id, 'cbbbabbb870-e99a-11e4-bb48-cbcddd66d218')
-          assert.equal(profile.displayName, 'test****@nate.com')
+          assert.equal(profile.displayName, 'test407')
           assert.equal(profile.email, 'test407@nate.com')
           assert.equal(profile.emails[0].value, 'test407@nate.com')
 
@@ -59,7 +59,7 @@ describe('PaycoStrategy', function () {
 
   describe('strategy when loading user profile and encountering an error', function () {
     // mock
-    strategy._oauth2.get = function (url, accessToken, callback) {
+    strategy._oauth2._request = function (method, url, headers, postBody, accessToken, callback) {
       callback(new Error('something-went-wrong'))
     }
 
